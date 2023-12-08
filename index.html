@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="first">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="displayno">
+
+                </div>
+                <div>
+                    <input type="button" value="DE" onclick="deleteLast()">
+                    <input type="button" value="AC" onclick="del()">
+                    <input type="button" value="." onclick="disp('.')">
+                    <input type="button" value="/" onclick="disp('/')">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="disp('7')">
+                    <input type="button" value="8" onclick="disp('8')">
+                    <input type="button" value="9" onclick="disp('9')">
+                    <input type="button" value="*" onclick="disp('*')">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="disp('4')">
+                    <input type="button" value="5" onclick="disp('5')">
+                    <input type="button" value="6" onclick="disp('6')">
+                    <input type="button" value="+" onclick="disp('+')">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="disp('1')">
+                    <input type="button" value="2" onclick="disp('2')">
+                    <input type="button" value="3" onclick="disp('3')">
+                    <input type="button" value="-" onclick="disp('-')">
+                </div>
+
+                <div>
+                    <input type="button" value="0" onclick="disp('0')">
+                    <input type="button" value="00" onclick="disp('00')">
+                    <input type="button" value="=" onclick="calcu()">
+                    
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
